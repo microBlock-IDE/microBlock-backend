@@ -83,6 +83,10 @@ app.post('/', async (req, res) => {
             return false;
         }
 
+        if (typeof info["category"] !== "string") {
+            return false;
+        }
+
         if (typeof info["icon"] !== "string") {
             return false;
         }
